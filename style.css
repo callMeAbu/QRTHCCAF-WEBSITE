@@ -108,7 +108,21 @@ body {
 
 
     .logo h1 {
-        display: none; /* Hide on mobile */
+        display: none; 
+    }
+
+
+    .hero-content h1 {
+        font-size: 2rem; 
+        line-height: 2.5; 
+        white-space: normal; 
+        
+    }
+
+    .donate-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-top: auto;
     }
 }
 
@@ -225,21 +239,7 @@ body {
     margin: 0 auto;
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem; /* Adjusts size for tablets */
-        max-width: 90%;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.8rem; 
-        max-width: 95%;
-        padding: 10px 10px;
-    }
-}
 
 
 /* Mission & Vision Section */
