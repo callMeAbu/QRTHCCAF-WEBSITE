@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRTHCCAF - Quick Response To The Challenged Care Foundation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/Q R T H C C A F LOGO (1).png" alt=""></a>
+            <a href="/index.html"><h1>QRTHCCAF</h1></a>
+        </div>
+    
+        <!-- Hamburger Menu -->
+        <button class="hamburger" aria-label="Toggle navigation">
+            ☰
+        </button>
+    
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/aboutus/aboutus.html">About Us</a></li>
+            <li><a href="/ourprogram/index.html">Our Programs</a></li>
+            <li><a href="/getinvolved/index.html">Get Involved</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="donate-btn">Support Our Cause</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="get-involved-hero">
+        <div class="hero-content">
+            <h1>Get Involved</h1>
+            <p>Be Part of Something Bigger</p>
+            <div class="hero-buttons">
+                <a href="#volunteer" class="hero-btn">Volunteer</a>
+                <a href="#partner" class="hero-btn">Partner</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <p class="intro-text">At Quick Response to the Challenged Care Foundation (QRTHCCAF), we believe that everyone can make a difference—whether through volunteering, partnerships, or fundraising. Your support helps us provide free medical care, education, skills training, and community support to those who need it most.</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="involvement-section volunteer-section">
+        <div class="container">
+            <div class="section-content">
+                <div class="content-left">
+                    <h2>Volunteer With Us</h2>
+                    <p>Do you have a passion for helping others? Join our team of dedicated volunteers and be part of life-changing initiatives!</p>
+                    <div class="opportunities-list">
+                        <div class="opportunity-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>Medical Outreach Support</span>
+                        </div>
+                        <div class="opportunity-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Education Program Assistant</span>
+                        </div>
+                        <div class="opportunity-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <span>Event Organization</span>
+                        </div>
+                        <div class="opportunity-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Professional Skills Contribution</span>
+                        </div>
+                    </div>
+                    <button class="action-btn volunteer-btn" onclick="openVolunteerForm()">
+                        Sign Up to Volunteer
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="content-right">
+                    <div class="impact-card">
+                        <h3>Volunteer Impact</h3>
+                        <div class="impact-stats">
+                            <div class="stat">
+                                <span class="number">100+</span>
+                                <span class="label">Active Volunteers</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">1000+</span>
+                                <span class="label">Lives Impacted</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partner" class="involvement-section partner-section">
+        <div class="container">
+            <div class="section-content reverse">
+                <div class="content-left">
+                    <h2>Partner With Us</h2>
+                    <p>Join forces with QRTHCCAF to create lasting change in communities.</p>
+                    <div class="partnership-options">
+                        <div class="option-card">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Corporate Partnerships</h3>
+                            <p>Fulfill your CSR goals while making a real difference.</p>
+                        </div>
+                        <div class="option-card">
+                            <i class="fas fa-gift"></i>
+                            <h3>In-Kind Donations</h3>
+                            <p>Donate supplies and resources to support our programs.</p>
+                        </div>
+                    </div>
+                    <button class="action-btn partner-btn" onclick="openPartnerForm()">
+                        Become a Partner
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="content-right">
+                    <div class="partner-showcase">
+                        <!-- Partner logos or success stories -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fundraising Section -->
+    <section id="fundraise" class="involvement-section fundraise-section">
+        <div class="container">
+            <h2>Fundraising Opportunities</h2>
+            <div class="fundraising-grid">
+                <div class="fundraising-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Host an Event</h3>
+                    <p>Organize charity events to support our cause</p>
+                    <button class="secondary-btn">Learn More</button>
+                </div>
+                <!-- More fundraising cards -->
+            </div>
+            <div class="start-fundraiser">
+                <h3>Ready to Start Your Fundraiser?</h3>
+                <button class="action-btn fundraise-btn" onclick="openFundraiserForm()">
+                    Start a Fundraiser
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Join Us in Changing Lives!</h2>
+            <p>Every action, no matter how small, can make a difference.</p>
+            <div class="cta-buttons">
+                <a href="#volunteer" class="cta-btn">Volunteer Today</a>
+                <a href="#partner" class="cta-btn">Partner With Us</a>
+                <a href="#fundraise" class="cta-btn">Start Fundraising</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p> <b> Email:</b> qrthccafngo@gmail.com
+                <p> <b> Phone: </b> 09041263453, +4915906675964, 08060783041
+                <p> <b> Address: </b> Opposite Dunama School Back Gate, Along Civil Defence Command, Off Shendam Road Lafia
+                    -Nasarawa State Nigeria. 950101.
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 
+                <img src="/images/Q R T H C C A F LOGO (1).png" alt="">
+                QRTHCCAF. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html>
