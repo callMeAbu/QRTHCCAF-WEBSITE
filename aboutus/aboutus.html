@@ -96,39 +96,63 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <h2>Our Leadership Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <img src="images/user-circles-set_78370-4704.avif" alt="Dr. Anario Onyeukwu">
-                    <div class="member-info">
-                        <h3>Dr. Anario Onyeukwu</h3>
-                        <p class="position">Executive Chairman</p>
-                        <div class="bio">
-                            <p>Leading our organization with vision and dedication, Dr. Onyeukwu brings extensive experience in humanitarian services and healthcare management.</p>
-                        </div>
-                    </div>
+   <!-- Team Section -->
+<section class="team">
+    <div class="container">
+        <h2>Our Leadership Team</h2>
+        <div class="team-carousel">
+            <div class="team-member" onclick="showBio(0)">
+                <img src="/images/dr anario.jpg" alt="Dr. Anario Onyeukwu">
+                <div class="member-info">
+                    <h3>Dr. Anario Onyeukwu</h3>
+                    <p class="position">Executive Chairman</p>
                 </div>
-                <!-- Repeat for other team members -->
+            </div>
+            <div class="team-member" onclick="showBio(1)">
+                <img src="/images/dr eze.jpg" alt="Jane Doe">
+                <div class="member-info">
+                    <h3>Rev. Dr. Onyeukwu Eze</h3>
+                    <p class="position">Vice Chairman</p>
+                </div>
+            </div>
+            <div class="team-member" onclick="showBio(2)">
+                <img src="/images/mrs nkechi.jpg" alt="John Smith">
+                <div class="member-info">
+                    <h3>Mrs. Nkechi Okorie</h3>
+                    <p class="position">Director of Programs</p>
+                </div>
+            </div>
+            <div class="team-member" onclick="showBio(3)">
+                <img src="/images/akolo averson.jpg" alt="Mary Johnson">
+                <div class="member-info">
+                    <h3>Mr. Akolo Averson</h3>
+                    <p class="position">Financial Secretary</p>
+                </div>
+            </div>
+            <div class="team-member" onclick="showBio(4)">
+                <img src="/images/abubakarmohammedIT.png" alt="Abubakar Mohammed">
+                <div class="member-info">
+                    <h3>Abubakar Mohammed</h3>
+                    <p class="position">Operations Manager</p>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Objectives Section -->
-    <section class="objectives">
-        <div class="container">
-            <h2>Our Objectives</h2>
-            <div class="objectives-list">
-                <div class="objective-item">
-                    <i class="fas fa-check-circle"></i>
-                    <p>Improving socio-economic conditions for the less privileged through healthcare and education.</p>
-                </div>
-                <!-- Repeat for other objectives -->
-            </div>
+    <!-- Slide-in Bio Section -->
+    <div class="bio-slide" id="bioSlide">
+        <span class="close-btn" onclick="closeBio()">&times;</span>
+        <div class="bio-content">
+            <img id="bioImage" src="" alt="">
+            <h3 id="bioName"></h3>
+            <p class="position" id="bioPosition"></p>
+            <p id="bioCaption"><i></i></p>
+            <p id="bioText"></p>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Footer -->
     <footer>
