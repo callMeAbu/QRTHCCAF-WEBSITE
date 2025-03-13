@@ -70,3 +70,34 @@ function showBio(index) {
 function closeBio() {
     document.getElementById("bioSlide").classList.remove("show");
 }
+
+
+
+
+// our programs number counter 
+
+// Number Counter Animation (Moderately Slow)
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".number");
+    const speed = 120; // Adjusted speed for a smoother count
+
+    counters.forEach((counter) => {
+        const updateCounter = () => {
+            const target = +counter.getAttribute("data-target");
+            let count = +counter.innerText.replace("+", ""); // Remove + for calculation
+
+            const increment = Math.ceil(target / speed);
+
+            if (count < target) {
+                counter.innerText = count + increment + "+";
+                setTimeout(updateCounter, 150); // Adjusted for smoother transition
+            } else {
+                counter.innerText = target + "+"; // Ensure the final number includes +
+            }
+        };
+
+        updateCounter();
+    });
+});
+
+

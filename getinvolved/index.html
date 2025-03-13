@@ -47,131 +47,187 @@
     </section>
 
     <!-- Introduction Section -->
-    <section class="intro-section">
-        <div class="container">
-            <p class="intro-text">At Quick Response to the Challenged Care Foundation (QRTHCCAF), we believe that everyone can make a difference—whether through volunteering, partnerships, or fundraising. Your support helps us provide free medical care, education, skills training, and community support to those who need it most.</p>
+<section class="intro-section">
+    <div class="container">
+        <h2 class="intro-heading">Together, We Can Create Change</h2>
+        <p class="intro-text">
+            At <strong>Quick Response to the Challenged Care Foundation (QRTHCCAF)</strong>, we believe that <i>"everyone has the power to make a difference"</i>.  
+            Whether through <span class="highlight">volunteering</span>, <span class="highlight">partnerships</span>, or <span class="highlight">fundraising</span>,  
+            your support helps us povide <i><b>"free medical care, education, skills training, and community support"</b> </i>to those in need.
+        </p>
+        <div class="intro-buttons">
+            <a href="#volunteer" class="primary-btn">Get Involved</a>
+            <a href="#donate" class="secondary-btn">Support Our Mission</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Volunteer Section -->
-    <section id="volunteer" class="involvement-section volunteer-section">
-        <div class="container">
-            <div class="section-content">
-                <div class="content-left">
-                    <h2>Volunteer With Us</h2>
-                    <p>Do you have a passion for helping others? Join our team of dedicated volunteers and be part of life-changing initiatives!</p>
-                    <div class="opportunities-list">
-                        <div class="opportunity-item">
-                            <i class="fas fa-hospital"></i>
-                            <span>Medical Outreach Support</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>Education Program Assistant</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-hands-helping"></i>
-                            <span>Event Organization</span>
-                        </div>
-                        <div class="opportunity-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Professional Skills Contribution</span>
-                        </div>
+
+   <!-- Volunteer Section -->
+<section id="volunteer" class="involvement-section volunteer-section">
+    <div class="container">
+        <div class="section-content">
+            <!-- Left Content -->
+            <div class="content-left">
+                <h2>Become a Volunteer</h2>
+                <p>Join our passionate team and make a difference in lives. Explore opportunities that match your skills and interests!</p>
+                
+                <div class="opportunities-list">
+                    <div class="opportunity-item">
+                        <i class="fas fa-hospital"></i>
+                        <span>Medical Outreach Support</span>
                     </div>
-                    <button class="action-btn volunteer-btn" onclick="openVolunteerForm()">
-                        Sign Up to Volunteer
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <div class="opportunity-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education Program Assistant</span>
+                    </div>
+                    <div class="opportunity-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Event Organization</span>
+                    </div>
+                    <div class="opportunity-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Professional Skills Contribution</span>
+                    </div>
                 </div>
-                <div class="content-right">
-                    <div class="impact-card">
-                        <h3>Volunteer Impact</h3>
-                        <div class="impact-stats">
-                            <div class="stat">
-                                <span class="number">100+</span>
-                                <span class="label">Active Volunteers</span>
-                            </div>
-                            <div class="stat">
-                                <span class="number">1000+</span>
-                                <span class="label">Lives Impacted</span>
-                            </div>
+                
+                <a href="#"><button class="action-btn volunteer-btn">
+                    Sign Up to Volunteer <i class="fas fa-arrow-right"></i>
+                </button></a>
+            </div>
+
+            <!-- Right Content -->
+            <div class="content-right">
+                <div class="impact-card">
+                    <h3>Volunteer Impact</h3>
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="number" data-target="100">0</span>
+                            <span class="label">Active Volunteers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-target="1000">0</span>
+                            <span class="label">Lives Impacted</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Volunteer Form Modal -->
+<div id="volunteer-modal" class="modal">
+    <div class="modal-content">
+        <h2>Volunteer Sign-Up</h2>
+    </div>
+</div>
+
 
     <!-- Partnership Section -->
-    <section id="partner" class="involvement-section partner-section">
-        <div class="container">
-            <div class="section-content reverse">
-                <div class="content-left">
-                    <h2>Partner With Us</h2>
-                    <p>Join forces with QRTHCCAF to create lasting change in communities.</p>
-                    <div class="partnership-options">
-                        <div class="option-card">
-                            <i class="fas fa-handshake"></i>
-                            <h3>Corporate Partnerships</h3>
-                            <p>Fulfill your CSR goals while making a real difference.</p>
-                        </div>
-                        <div class="option-card">
-                            <i class="fas fa-gift"></i>
-                            <h3>In-Kind Donations</h3>
-                            <p>Donate supplies and resources to support our programs.</p>
-                        </div>
+<section id="partner" class="involvement-section partner-section">
+    <div class="container">
+        <div class="section-content reverse">
+            <!-- Left Content -->
+            <div class="content-left">
+                <h2>Partner With Us</h2>
+                <p>Join forces with QRTHCCAF to create lasting change in communities. Partner with us to make a real impact.</p>
+                
+                <div class="partnership-options">
+                    <div class="option-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Corporate Partnerships</h3>
+                        <p>Fulfill your CSR goals while making a real difference.</p>
                     </div>
-                    <button class="action-btn partner-btn" onclick="openPartnerForm()">
-                        Become a Partner
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                    <div class="option-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>In-Kind Donations</h3>
+                        <p>Donate supplies and resources to support our programs.</p>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Nonprofit Collaboration</h3>
+                        <p>Work with us to expand impact and drive community change.</p>
+                    </div>
                 </div>
-                <div class="content-right">
-                    <div class="partner-showcase">
-                        <!-- Partner logos or success stories -->
-                    </div>
+
+                <a href="#"><button class="action-btn partner-btn">
+                    Become a Partner <i class="fas fa-arrow-right"></i>
+                </button></a>
+            </div>
+
+            <!-- Right Content -->
+            <div class="content-right">
+                <h3>Our Trusted Partners</h3>
+                <div class="partner-showcase">
+                    <img src="/images/nikyeze_dynamic_services.png" alt="Partner 1">
+                    
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Partner Form Modal -->
+<div id="partner-modal" class="modal">
+    <div class="modal-content">
+        <h2>Partner With Us</h2>
+    </div>
+</div>
 
     <!-- Fundraising Section -->
-    <section id="fundraise" class="involvement-section fundraise-section">
-        <div class="container">
-            <h2>Fundraising Opportunities</h2>
-            <div class="fundraising-grid">
-                <div class="fundraising-card">
-                    <div class="card-icon">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3>Host an Event</h3>
-                    <p>Organize charity events to support our cause</p>
-                    <button class="secondary-btn">Learn More</button>
-                </div>
-                <!-- More fundraising cards -->
-            </div>
-            <div class="start-fundraiser">
-                <h3>Ready to Start Your Fundraiser?</h3>
-                <button class="action-btn fundraise-btn" onclick="openFundraiserForm()">
-                    Start a Fundraiser
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
+<section id="fundraise" class="involvement-section fundraise-section">
+    <div class="container">
+        <h2>Fundraising Opportunities</h2>
 
-    <!-- Call to Action Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Join Us in Changing Lives!</h2>
-            <p>Every action, no matter how small, can make a difference.</p>
-            <div class="cta-buttons">
-                <a href="#volunteer" class="cta-btn">Volunteer Today</a>
-                <a href="#partner" class="cta-btn">Partner With Us</a>
-                <a href="#fundraise" class="cta-btn">Start Fundraising</a>
+        <div class="fundraising-grid">
+            <!-- Fundraising Card 1 -->
+            <div class="fundraising-card">
+                <div class="card-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Host an Event</h3>
+                <p>Organize charity events to support our cause.</p>
+                <button class="secondary-btn">Learn More</button>
+            </div>
+
+            <!-- Fundraising Card 2 -->
+            <div class="fundraising-card">
+                <div class="card-icon">
+                    <i class="fas fa-donate"></i>
+                </div>
+                <h3>Online Campaign</h3>
+                <p>Launch a digital fundraiser and inspire your network.</p>
+                <button class="secondary-btn">Learn More</button>
+            </div>
+
+            <!-- Fundraising Card 3 -->
+            <div class="fundraising-card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Drives</h3>
+                <p>Mobilize your local community to raise funds together.</p>
+                <button class="secondary-btn">Learn More</button>
             </div>
         </div>
-    </section>
+
+        <div class="start-fundraiser">
+            <h3>Ready to Start Your Fundraiser?</h3>
+            <a href="#"><button class="action-btn fundraise-btn">
+                Start a Fundraiser <i class="fas fa-arrow-right"></i>
+            </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- Fundraiser Form Modal -->
+<div id="fundraiser-modal" class="modal">
+    <div class="modal-content">
+        <h2>Start Your Fundraiser</h2>
+    </div>
+</div>
+<hr>
 
      <!-- Footer -->
      <footer>
@@ -186,10 +242,12 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/aboutus/aboutus.html">About Us</a></li>
+                    <li><a href="/ourprogram/index.html">Our Programs</a></li>
+                    <li><a href="/getinvolved/index.html">Get Involved</a></li>
                     <li><a href="donate.html">Donate</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
                 </ul>
             </div>
             <div class="footer-section">
