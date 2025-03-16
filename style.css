@@ -2174,3 +2174,300 @@ html {
         flex-direction: column;
     }
 }
+
+
+
+
+/* donate page */
+
+/* Donation Section Styling */
+.donate-section {
+    background: #f8f9fa;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.container h2 {
+    position: relative;
+    display: inline-block; /* Ensures underline only covers text width */
+    padding-bottom: 10px; /* Adds spacing between text and underline */
+}
+
+.container h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Adjust the underline length */
+    height: 4px; /* Thickness of the underline */
+    background-color: red; /* Red underline */
+    border-radius: 2px; /* Smooth edges */
+}
+
+
+.donate-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: #0703f5;
+}
+
+.donate-section p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Donation Options Grid */
+
+.donate-section {
+    margin-top: 5%;
+    padding: 100px 5% 60px; 
+    text-align: center;
+    background: #f8f7f7;
+}
+.donate-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+
+.donate-option {
+    background: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donate-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.donate-option h3 {
+    font-size: 1.5rem;
+    color: #e40303;
+    margin-bottom: 10px;
+}
+
+.meds{
+    color: black;
+}
+
+.donate-option p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Donate Button */
+.donate-button {
+    background: #1202f5;
+    color: #feffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+.donate-button:hover {
+    background: #db0202;
+    transform: scale(1.05);
+}
+
+/* Bank Details Styling */
+.payment-methods {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+
+.payment-methods h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Adjust the underline length */
+    height: 4px; /* Thickness of the underline */
+    background-color: rgb(17, 0, 255); /* Red underline */
+    border-radius: 2px; /* Smooth edges */
+}
+
+
+.payment-methods h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block; /* Ensures underline only covers text width */
+    padding-bottom: 10px;
+}
+
+.bank-details {
+    background: #0703f5;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.bank-details h4 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bank-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-options {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .payment-methods {
+        width: 90%;
+    }
+}
+
+
+
+
+/* event page design  */
+
+
+/* Events Section Styling */
+
+
+.events-section {
+    background-color: #f9f9f9;
+    padding: 150px 20px 80px;
+    
+}
+
+
+.events-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Stylish Underline for h2 */
+.events-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.events-section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
+}
+
+/* Event Cards Grid */
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Event Card Styling */
+.event-card {
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 50px;
+}
+
+.event-card a{
+    text-decoration: none;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Event Details */
+.event-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 15px;
+    color: var(--primary-red);
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #dfdada;
+    margin: 0 15px 10px;
+}
+
+.event-card .event-details {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+/* Buttons */
+.event-button {
+    display: block;
+    width: 80%;
+    margin: 15px auto 20px;
+    padding: 12px;
+    background: rgb(47, 0, 255);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.event-button:hover {
+    background: darkred;
+}
+
